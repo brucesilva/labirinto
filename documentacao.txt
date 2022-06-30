@@ -1,14 +1,9 @@
 Documentação jogo labirinto
 
-A classe data-item dentro das div é para
-q eu consiga percorrer todas elas, e ao 
-clicar em alguma, eu consiga pegar o 
-valor dela
-<div data-item="l2_c2" class="l lh l2_c2 item">
+O jogo do labirinto tem como objetivo procurar o trofeu no tabuleiro. 
+A cada escolha do jogador, é indicado uma ou mais direção que ele deve escolher.
+Dentro do jogo existe apenas um caminho para achar o troféu, já para perder o jogo existe outros caminhos.
 
-A classe l é o tamanho das div
-A classe lh é o hover
-a classe l2_c2 é para saber em qual quadrado eu estou
 
 
 
