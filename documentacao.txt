@@ -4,6 +4,8 @@ O jogo do labirinto tem como objetivo procurar o trofeu no tabuleiro.
 A cada escolha do jogador, é indicado uma ou mais direção que ele deve escolher.
 Dentro do jogo existe apenas um caminho para achar o troféu, já para perder o jogo existe outros caminhos.
 
+Abaixo de cada fase existe um botão para reiniciar o jogo.
+
 
 
 
