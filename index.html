@@ -119,4 +119,115 @@
  
 <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Jogo Labirinto</title>
+</head>
+<body>
+
+    <h1>Jogo Labirinto</h1>
+
+    <div class="instructions">
+        <h3>Instruções</h3>
+        <ul>
+            <li>O jogo consiste em achar o trofeu, seguindo as direções que o jogo dá diante de cada escolha do jogador.</li>
+            <li>Existe apenas 1 caminho para a vitória e outros caminhos para a derrota.</li>
+            <li>É preciso escolher bem cada jogada, para não ir pelo caminho errado.</li>
+            <li>Clique onde o jogo solicita, depois é só ir escolhendo as direções que o jogo sinaliza.</li>
+        </ul>
+    </div>
+
+    <hr>
+
+  <div class="container1"> 
+  
+  <div  class="game"> 
+ 
+     
+
+    <div data-item="l1_c1" class="l1_c1 item">
+        <img src="assets/img/setaBaixo.png" class="setaBaixo" alt="">
+        <!-- <button class="btn btn-primary start1"></button> -->
+    </div>
+
+    <div data-item="l1_c2" class="l1_c2 item"> 
+        <button data-item="l1_c2" class="btn btn-primary bl1_c2 g">
+            <img src="assets/img/gameOver.jpg" class="gameOver">
+        </button>
+    </div>
+
+    <div data-item="l1_c3" class="l1_c3 item"> 
+        <button data-item="l1_c3"  class="btn btn-primary  bl1_c3">
+            <img src="assets/img/campeao.png" class="campeao" width="100px" height="90px" alt="">
+        </button>
+    </div>
+ 
+    <!-- *********  Linha 2**************** -->
+
+    <div data-item="l2_c1" class="l2_c1 item"> 
+        <button data-item="l2_c1" class="btn btn-primary  bl2_c1"> 
+            <img src="assets/img/setaBaixoDireita.png" class="setaBaixoDireita" width="80px" height="90px" alt="">
+        </button>
+    </div>
+
+    <div data-item="l2_c2" class="l l2_c2 item"> 
+        <button data-item="l2_c2" class="btn btn-primary  bl2_c2">
+            <img src="assets/img/setaCima.png" class="setaCima" width="100px" height="80px" alt="">
+        </button>
+    </div>
+
+    <div data-item="l2_c3" class="l l2_c3 item"> 
+        <button data-item="l2_c3" class="btn btn-primary  bl2_c3">
+            <img src="assets/img/setaCima.png" class="setaCima1" width="100px" height="80px" alt="">
+        </button>
+    </div>
+
+    <!-- *********Linha 3******************** -->
+    
+    <div data-item="l3_c1" class="l l3_c1 item"> 
+        <button data-item="l3_c1"  class="btn btn-primary  bl3_c1">
+            <img src="assets/img/setaLadoDireita.png" class="setaLadoDireita" width="90px" alt="">
+        </button>
+    </div>
+
+    <div data-item="l3_c2" class="l l3_c2 item"> 
+        <button data-item="l3_c2" class="btn btn-primary  bl3_c2">
+            <img src="assets/img/setaCimaLadoDireito.png" class="setaCimaLadoDireito" width="100px" alt="">
+        </button>
+    </div>
+
+    <div data-item="l3_c3" class="l l3_c3 item"> 
+        <button data-item="l3_c3" class="btn btn-primary  bl3_c3">
+            <img src="assets/img/setaCima.png" class="setaCima2" width="100px" height="80px" alt="">
+        </button>
+    </div>
+
+  </div>    <!-- jogo -->
+ 
+</div><!-- container -->
+
+<!-- ************Aqui é para reiniciar o jogo **************** -->
+<div class="container">
+    <div class="row">
+         
+        <div class="col-md-12" style="text-align:center;">
+            <div class="btn btn-danger Brestart" onclick="restartGame()"><span style="font-weight: bold;"> Reiniciar Jogo</span></div>
+        </div>
+    </div> 
+</div>
+
+ 
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+>>>>>>> ab1112ec55a4eeeb218eaf240a68998a07cad79d
 </html>
