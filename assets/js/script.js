@@ -107,12 +107,36 @@ function itemClick(event){
         document.querySelector('.bl1_c3').disabled = false; 
     }
 
-    if(item == 'l1_c3'){
+    if(item == 'l1_c3'){ 
         document.querySelector('.campeao').style.display = 'block';
         document.querySelector('.bl2_c3').disabled = true;
-         
-    }
+        document.querySelector('.bl1_c3').disabled = true;
 
+
+        // Fazer aparecer um novo botão para uma nova fase do jogo
+        document.querySelector('.Brestart').style.display = 'none';
+        document.querySelector('.nextPhase').style.display = 'block';
+        
+        // mostrando o botão de nova fase
+        // document.querySelector('.resetGame').style.display = 'none';
+        // document.querySelector('.restartGame').style.display = 'block';
+
+        // alert("Parabéns você ganhou o jogo");
+        
+        // var op = confirm("Parabéns você Ganhou o Jogo. Ir para a próxima fase?");
+        // if(op == true){
+        //     alert("Voce precionou ok");
+        // }
+        // else{
+        //     restartGame();
+        // }
+         
+    } 
+
+}
+
+function nextPhase(){
+    
 }
  
 
@@ -140,3 +164,17 @@ function itemClick(event){
     document.querySelector('.bl3_c3').disabled = true; 
 
  }
+
+
+//  move the ball collor site
+let button = document.querySelector('.ball'); 
+button.addEventListener('click', (e)=>{
+    e.target.classList.toggle('ball-move');
+    document.body.classList.toggle('dark');
+    document.body.classList.toggle('letterWhite');
+    // aqui estou mundando o background do fundo do jgo
+    document.game.classList('gameBackgroundBlack');
+    
+   
+     
+});

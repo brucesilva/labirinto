@@ -14,6 +14,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
+   
  }
   
  .game{
@@ -25,21 +26,50 @@
    flex-wrap: wrap;
    width: 30%;  /* 30 é o normal aqui aumento a qtd de quadros que vai ter dentro */
    height: 90%; /* aqui dou espacamento nas div */
-   background-color: #ddd;
+   /* background-color: black; */
+   /* background-color: #ddd; */
+ }
+
+ .gameBackgroundBlack{
+  background-color: black;
+ }
+
+ .restartGame{
+  display: none;
+  margin-top: -75px;
+  width: 312px;
+  margin-left: 5px;
  }
 
  button{
    width: 100px;
    height: 100px;
-   margin-left: 5px;
-    
+   margin-left: 5px; 
  }
+
+ /* div row onde fica o botão */
+.nextPhase{
+  display: none;
+  width: 312px;
+  margin-left: 5px;
+  /* background-color: red; */
+  /* text-align: center; */
+}
+/* botão nova fase */
+.BnextPhase{
+  width: 312px;
+  margin-left: -2px;
+}
 
  /* button reiniciar */
  .Brestart{
-   margin-top: -75px;
+   /* margin-top: -75px; */
    width: 312px;
    margin-left: 5px;
+ }
+
+ .row{
+  margin-top: -42px;
  }
  
  /* Estou escondendo as imagem */
@@ -105,6 +135,42 @@
  .imgBloco{
    display: block;
  }
+
+ /* button for changed Color */ 
+ .button{
+  position: relative;
+  width: 100px;
+  height: 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 2.5px #39a2db59;
+  cursor: pointer;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+ }
+
+.ball{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #053742;
+  transition: left 0.5s;
+}
+
+ .ball-move{
+  left: calc(100% - 20px); 
+ }
+
+ .dark{
+  background-color: black;
+ }
+
+ .letterWhite{
+  color: white;
+ }
+
 
 /* .start{ */
    /* width: 100px; */
