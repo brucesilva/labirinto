@@ -1,19 +1,3 @@
-//  functions
-// function insereSeta(){
-//     document.querySelector('.seta').style.display = 'block';
-    
-//     alert("um botão foi clicado");
-
-//     //desabilitar um botão 
-//     document.querySelector('.l2').disabled = true; 
-// }
-
-
-//EVENTS
-// document.querySelector('.l1').addEventListener('click', insereSeta);
-
-// document.querySelector('.a1').addEventListener('click', itemClick);
-
 // aqui estou pecorrendo por todos os quadrados
 document.querySelectorAll('.item').forEach(item =>{
     item.addEventListener('click', itemClick);
@@ -44,7 +28,7 @@ function itemClick(event){
 
 
     if(item == 'l2_c1'){
-        console.log("Estou no if l2_c1");
+        // console.log("Estou no if l2_c1");
         document.querySelector('.setaBaixoDireita').style.display = 'block';
         document.querySelector('.l1_c2').classList.add('lh');  
         document.querySelector('.bl2_c2').disabled = false;
@@ -123,19 +107,17 @@ function itemClick(event){
 
         // alert("Parabéns você ganhou o jogo");
         
-        // var op = confirm("Parabéns você Ganhou o Jogo. Ir para a próxima fase?");
-        // if(op == true){
-        //     alert("Voce precionou ok");
-        // }
-        // else{
-        //     restartGame();
-        // }
+        
          
     } 
 
 }
 
 function nextPhase(){
+    // document.querySelector('.game').style.display = 'none';
+    // document.querySelector('.secondFase').style.display = 'block';
+    // document.querySelector('.instructions').style.display = 'none';
+    window.location.href = 'nextPhases.html';
     
 }
  
@@ -152,7 +134,9 @@ function nextPhase(){
     document.querySelector('.setaCimaLadoDireito').style.display = 'none';
     document.querySelector('.setaLadoDireita').style.display = 'none';
     document.querySelector('.setaCima2').style.display = 'none';
-    
+
+
+     
     // aqui é bloqueando todo mundo
     document.querySelector('.bl1_c2').disabled = true; 
     document.querySelector('.bl1_c3').disabled = true; 
@@ -168,13 +152,17 @@ function nextPhase(){
 
 //  move the ball collor site
 let button = document.querySelector('.ball'); 
+  
 button.addEventListener('click', (e)=>{
     e.target.classList.toggle('ball-move');
     document.body.classList.toggle('dark');
     document.body.classList.toggle('letterWhite');
-    // aqui estou mundando o background do fundo do jgo
-    document.game.classList('gameBackgroundBlack');
+    document.querySelector('hr').classList.add('white');
+ 
     
-   
-     
+    // aqui estou mundando o background do fundo do jgo
+    // document.game.classList('gameBackgroundBlack');
+    // let buttonChagedColor = document.querySelector(e.target.querySelectorAll);
+    // console.log(e.target);
+      
 });

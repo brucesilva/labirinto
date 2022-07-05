@@ -1,5 +1,5 @@
  html, body{
-   background-color: #ddd;
+    background-color: #ddd;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -8,6 +8,16 @@
  h1{
    text-align: center;
  }
+
+hr{
+  margin-bottom: 30px;
+  }
+
+.white{
+  background-color: white;
+}
+
+
  .container1{
    /* border: 1px solid red; */
    height: 350px;
@@ -19,6 +29,7 @@
   
  .game{
    /* border: 3px solid brown; */
+   display: block;
    margin-top: -52px;
    display: flex;
    justify-content: center;
@@ -135,6 +146,14 @@
  .imgBloco{
    display: block;
  }
+
+
+/* **** SECOND FASE ******* */
+.secondFase{
+  display: none;
+}
+
+
 
  /* button for changed Color */ 
 .buttonChangedColor{

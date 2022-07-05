@@ -1,0 +1,249 @@
+  .container2{
+    /* border: 1px solid red; */
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    
+  }
+   
+  .game1{
+    /* border: 3px solid brown; */
+    
+    margin-top: -52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 35%;  /* 30 é o normal aqui aumento a qtd de quadros que vai ter dentro */
+    height: 90%; /* aqui dou espacamento nas div */ 
+  }
+
+  /* ***AQUI MOSTRA A FASE 3 */
+  .containerPhases{ 
+    border: 1px solid red;
+    display: none; 
+  }  
+  .aparecePhaseTwo{
+    display: flex;
+    flex-wrap: wrap;
+    width:40%; 
+    height:86%;  
+    align-items: center; 
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+/* ***AQUI TERMINA A FASE 3 */
+
+
+/* ***AQUI MOSTRA A FASE 4 */
+.aparecePhaseFour{
+  display: flex;
+  flex-wrap: wrap;
+  width:40%; 
+  height:86%;  
+  align-items: center; 
+  justify-content: center;
+  margin-bottom: 40px;
+}
+/* ***AQUI TERMINA A FASE 4 */
+ 
+  .gameBackgroundBlack{
+   background-color: black;
+  }
+ 
+  .restartGame{
+   display: none;
+   margin-top: -75px;
+   width: 312px;
+   margin-left: 5px;
+  }
+ 
+  button{
+    width: 100px;
+    height: 100px;
+    margin-left: 5px; 
+  }
+ 
+  /* div row onde fica o botão */
+ .nextPhase{
+   display: none;
+   width: 312px;
+   margin-left: 5px;
+   /* background-color: red; */
+   /* text-align: center; */
+ }
+ /* botão nova fase */
+ .BnextPhase{
+   width: 312px;
+   margin-left: -2px;
+ }
+ 
+  /* button reiniciar */
+  .Brestart{
+    /* margin-top: -75px; */
+    width: 412px;
+    margin-left: 5px;
+  }
+ 
+  .row{
+   margin-top: -42px;
+  }
+  
+  /* Estou escondendo as imagem */
+  img{
+    display: none; 
+    border-radius: 50px;
+  }
+
+
+  /* started of play */
+  .l2_c3{
+    width: 105px;
+    
+  }
+  
+ /* Estilazando as imagens */
+  .gameOver, .gameOver2, .gameOver3{
+    width: 90px;
+    height: 90px;
+    margin-left: -8px;
+    margin-top: -2px;
+    border-radius: 50px;
+  }
+ 
+  .setaCima, .setaCima1, .setaCima2{
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+     
+  }
+ 
+ 
+  .direitaEsquerda{ 
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+     
+  }
+
+  .setaLadoDireita{ 
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+     
+  }
+  
+  .setaCimaLadoDireito{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+     
+  }
+ 
+  .setaBaixoDireita{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-left: 0px;
+  }
+ 
+  .campeao{
+    border-radius: 50px;
+    margin-left: -10px;
+    width: 90px;
+    height: 90px;
+    margin-top: -4px;
+  }
+  
+  .imgStart{
+    display: none;
+  }
+ 
+  .imgBloco{
+    display: block;
+  }
+ 
+ 
+ /* **** SECOND FASE ******* */
+ .secondFase{
+   display: none;
+ }
+ 
+  
+  /* button for changed Color */ 
+ .buttonChangedColor{
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   align-items: flex-end;
+    
+   
+ }
+ .containerColor{
+   flex-direction: column; 
+   display: flex;
+   margin-right: 10px;
+ }
+ 
+ .textButton{
+   display: flex;
+   font-weight: bold;
+   /* margin-left: -30px; */
+   
+ }
+ 
+  .button{
+   position: relative;
+   width: 120px;
+   height: 20px;
+   border-radius: 50px;
+   box-shadow: 0 0 2.5px #39a2db59;
+   cursor: pointer;
+   background-color: #ffffff;
+   margin-bottom: 10px;
+   
+  }
+ 
+ .ball{
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background-color: #053742;
+   transition: left 0.5s;
+ }
+ 
+  .ball-move{
+   left: calc(100% - 20px); 
+  }
+ 
+  .dark{
+   background-color: black;
+  }
+ 
+  .letterWhite{
+   color: white;
+  }
+ 
+ 
+/* **** Started Phase Two */
+.phaseTwo{   
+  display: none;
+  border: 1px solid red;
+  width: 600px;
+  /* display: flex; */
+  /* display: flex; */
+  /* width:30px; 
+  height: 30px;  
+  margin-top: -52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; */
+  /* width: 35%;  /* 30 é o normal aqui aumento a qtd de quadros que vai ter dentro */
+  /* height: 90%; aqui dou espacamento nas div  */ 
+}
