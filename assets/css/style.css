@@ -137,15 +137,37 @@
  }
 
  /* button for changed Color */ 
+.buttonChangedColor{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-end;
+   
+  
+}
+.containerColor{
+  flex-direction: column; 
+  display: flex;
+  margin-right: 10px;
+}
+
+.textButton{
+  display: flex;
+  font-weight: bold;
+  /* margin-left: -30px; */
+  
+}
+
  .button{
   position: relative;
-  width: 100px;
+  width: 120px;
   height: 20px;
   border-radius: 50px;
   box-shadow: 0 0 2.5px #39a2db59;
   cursor: pointer;
   background-color: #ffffff;
   margin-bottom: 10px;
+  
  }
 
 .ball{
