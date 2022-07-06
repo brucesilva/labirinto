@@ -7,6 +7,7 @@
  }
  h1{
    text-align: center;
+   margin-top: 20px;
  }
 
 hr{
@@ -213,68 +214,3 @@ hr{
  }
 
 
-/* .start{ */
-   /* width: 100px; */
-   /* height: 100px; */
-   /* background-color: blue; */
-   /* margin-left: 5px; */
-   
-/* } */
-
-/* .game > .l{
-   width: 100px;
-   height: 100px;
-   background-color: blue;
-   margin-left: 5px
-} */
-  
-/* .lh:hover{
-   background-color: red;
-}
-   */
-/* .b{ 
-   width: 100px;
-   height: 100px;
-   margin-left: 5px;
-   margin-bottom: 5px;
-   background: red;
- }   */
-
- /* .botoes{
-    width: 90px;
-    height: 90px;  
-    background: red;
- } */
-
-/* div{ 
-    width: 100px;
-    height: 100px; 
-    display: inline-block;
-    border: 1px solid red;
-} */
- 
-/* .col-md-1{  
-     
-     margin-left: 1px;
-     width: 300px;
-     height: 100px;
-     padding: 0px;
-} */
-
-/* .btn-primary, button{
-    width:6rem;
-    height: 6rem; 
-} */
- 
-/* .setaBaixo, .gameOver, .setaEsqBaixo,
-.setaDireita, .setaCimaDireita, .campeao
-{
-    display: none;
-} */
- 
-/* .startHere{
-    height: 80px;
-    display: none;
-    
-}
-  */

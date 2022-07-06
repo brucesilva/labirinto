@@ -1,3 +1,6 @@
+  h1{
+    margin-top: 30px;
+  }
   .container2{
     /* border: 1px solid red; */
     height: 350px;
@@ -18,27 +21,31 @@
     flex-wrap: wrap;
     width: 35%;  /* 30 é o normal aqui aumento a qtd de quadros que vai ter dentro */
     height: 90%; /* aqui dou espacamento nas div */ 
+    margin-bottom: 10px;
   }
 
   /* ***AQUI MOSTRA A FASE 3 */
   .containerPhases{ 
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: none; 
   }  
-  .aparecePhaseTwo{
+
+  /* *** AQUI É ONDE TRAGO OS BLOCOS DA SEGUNDA FASE */
+  /* .aparecePhaseTwo{
     display: flex;
     flex-wrap: wrap;
-    width:40%; 
-    height:86%;  
+    /* aqui no width e no heigth que dou espaçamento dos quadrados e qtos quadrado vão tem em cada linha */
+    /* width:40%; 
+    height:60%;  
     align-items: center; 
     justify-content: center;
-    margin-bottom: 40px;
-  }
+    margin-bottom: 60px;
+  } */ 
 /* ***AQUI TERMINA A FASE 3 */
 
 
 /* ***AQUI MOSTRA A FASE 4 */
-.aparecePhaseFour{
+/* .aparecePhaseFour{
   display: flex;
   flex-wrap: wrap;
   width:40%; 
@@ -46,20 +53,21 @@
   align-items: center; 
   justify-content: center;
   margin-bottom: 40px;
-}
+} */
 /* ***AQUI TERMINA A FASE 4 */
  
   .gameBackgroundBlack{
    background-color: black;
   }
  
-  .restartGame{
-   display: none;
-   margin-top: -75px;
-   width: 312px;
-   margin-left: 5px;
-  }
+  /* .restartGame{
+    display: none;
+    margin-top: -75px;
+    width: 312px;
+    margin-left: 5px;
+   } */
  
+  /* aqui são os botões do jogo */
   button{
     width: 100px;
     height: 100px;
@@ -83,9 +91,16 @@
   /* button reiniciar */
   .Brestart{
     /* margin-top: -75px; */
-    width: 412px;
+    width: 418px;
     margin-left: 5px;
+    
   }
+
+  .btnNewPhase{
+    display: none;
+  }
+
+ 
  
   .row{
    margin-top: -42px;
@@ -233,7 +248,7 @@
 /* **** Started Phase Two */
 .phaseTwo{   
   display: none;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 600px;
   /* display: flex; */
   /* display: flex; */

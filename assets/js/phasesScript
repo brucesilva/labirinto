@@ -16,6 +16,9 @@ document.querySelector('.bl3_c4').disabled = true;
 
 
 
+
+
+
 // aqui estou pecorrendo por todos os quadrados
 document.querySelectorAll('.item').forEach(item =>{
     item.addEventListener('click', itemClick);
@@ -23,7 +26,7 @@ document.querySelectorAll('.item').forEach(item =>{
 
 function itemClick(event){
     // o event.target traz o componete inteiro que foi clicado
-    //  console.log(event.target);
+   //  console.log(event.target);
 
     // esse data-item foi colocado no buttom para que possamos pegar o campo
     let item = event.target.getAttribute('data-item');
@@ -109,14 +112,17 @@ function itemClick(event){
          document.querySelector('.bl2_c4').disabled = false;
       }
 
-    
+      // aqui é quando a pessoa ganhou, tiro o botão de de reniciar e coloco o botão de nova fase
+      if(item == 'l2_c1'){
+         document.querySelector('.restartSmal').style.display = 'none';
+         document.querySelector('.btnNewPhase').style.display = 'block';
+         document.querySelector('.btnNewPhase').style.marginLeft = '350px';
 
-
+         
+      }
+ 
 }
-
-
-
-
+ 
 //  move the ball collor site
 let button = document.querySelector('.ball'); 
   
@@ -129,12 +135,54 @@ button.addEventListener('click', (e)=>{
      
 });
 
+
+
+function newPhase(){
+   // document.querySelector('.game1').style.display = 'none';
+   // document.querySelector('.containerPhases').classList.add('aparecePhaseTwo');
+   // document.querySelector('.btnNewPhase').style.marginLeft = '297px';
+   // document.querySelector('.btnNewPhase').style.width = '520px';
+
+   window.location.href = 'phaseThree.html';
+}
+
 function hiddenGame(){ 
     document.querySelector('.game1').style.display = 'none';
     // document.querySelector('.phaseTwo').style.display = 'inline-block';
     document.querySelector('.containerPhases').classList.add('aparecePhaseTwo');
-    
      
 }  
 
-// document.querySelector('.Brestart').style.display = 'none';
+function restartGame(){
+ 
+   document.querySelector('.btnNewPhase').disabled = true;
+
+   document.querySelector('.direitaEsquerda').style.display = 'none'; 
+   document.querySelector('.esquerdaCima').style.display = 'none';
+   document.querySelector('.gameOver').style.display = 'none'; 
+   document.querySelector('.esquerdaCima2').style.display = 'none'; 
+   document.querySelector('.campeao').style.display = 'none'; 
+   document.querySelector('.direitaEsquerda2').style.display = 'none'; 
+   document.querySelector('.gameOver2').style.display = 'none';
+   document.querySelector('.setaLadoDireita2').style.display = 'none'; 
+   document.querySelector('.setaBaixo2').style.display = 'none'; 
+   document.querySelector('.gameOver3').style.display = 'none'; 
+   document.querySelector('.setaCima3').style.display = 'none'; 
+    
+   document.querySelector('.bl1_c1').disabled = true;
+   document.querySelector('.bl1_c2').disabled = true;
+   document.querySelector('.bl1_c3').disabled = false;
+   document.querySelector('.bl1_c4').disabled = true;
+
+   document.querySelector('.bl2_c1').disabled = true;
+   document.querySelector('.bl2_c2').disabled = true;
+   // document.querySelector('.bl2_c3').disabled = true;
+   document.querySelector('.bl2_c4').disabled = true;
+
+   document.querySelector('.bl3_c1').disabled = true;
+   document.querySelector('.bl3_c2').disabled = true;
+   document.querySelector('.bl3_c3').disabled = false;
+   document.querySelector('.bl3_c4').disabled = true;
+   
+    
+}
